@@ -1,0 +1,118 @@
+<!--
+This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A simple calculator</title>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<!-- Calculator -->
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-12">
+					<input type="text" id="calculator_screen" class="form-control" name="calculator_screen" disabled="">
+				</div>
+			</div>
+
+			<div class="row top-buffer">
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-sm-6">
+							<button id="btn_delete" class="btn btn-primary btn-block">Del</button>
+						</div>
+						<div class="col-sm-6">
+							<button id="btn_clear" class="btn btn-danger btn-block">C</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<button id="btn_division" class="btn btn-default btn-block">/</button>
+				</div>
+				<div class="col-sm-3">
+					<button id="btn_times" class="btn btn-default btn-block">*</button>
+				</div>
+				<div class="col-sm-3">
+					<button id="btn_substraction" class="btn btn-default btn-block">-</button>
+				</div>
+			</div>
+
+			<div class="row top-buffer">
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-4">
+							<button id="btn_7" class="btn btn-default btn-block">7</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_8" class="btn btn-default btn-block">8</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_9" class="btn btn-default btn-block">9</button>
+						</div>
+					</div>
+					<div class="row top-buffer">
+						<div class="col-sm-4">
+							<button id="btn_4" class="btn btn-default btn-block">4</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_5" class="btn btn-default btn-block">5</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_6" class="btn btn-default btn-block">6</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<button id="btn_addition" class="btn btn-default btn-block full-height">+</button>
+				</div>
+			</div>
+
+			<div class="row top-buffer">
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-4">
+							<button id="btn_1" class="btn btn-default btn-block">1</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_2" class="btn btn-default btn-block">2</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_3" class="btn btn-default btn-block">3</button>
+						</div>
+					</div>
+					<div class="row top-buffer">
+						<div class="col-sm-8">
+							<button id="btn_0" class="btn btn-default btn-block">0</button>
+						</div>
+						<div class="col-sm-4">
+							<button id="btn_decimal" class="btn btn-default btn-block">.</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<button id="btn_equals" class="btn btn-success btn-block full-height">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
